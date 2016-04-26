@@ -1,0 +1,41 @@
+<ion-view view-title="Stores">
+  <ion-content class="padding">
+    <!--<ion-list>
+      <ion-item class="item-icon-left item-icon-right" ng-repeat="category in categories">
+        <i class="icon {{category.icon}}"></i>{{category.name}}
+        <i class="icon ion-ios-arrow-right"></i>
+      </ion-item>
+    </ion-list>-->
+    <label class="item item-input">
+      <i class="icon ion-search placeholder-icon"></i>
+      <input type="search" placeholder="Search">
+    </label>
+
+    <div class="list card">
+      <a href="#/tab/categories/0" class="item item-icon-left item-icon-right" ng-repeat="category in categories">
+        <i class="icon {{category.icon}}"></i>
+        {{category.name}}
+        <i class="icon ion-ios-arrow-right"></i>
+      </a>
+    </div>
+
+    <div class="list card">
+      <a href="#/tab/categories/0" class="item item-icon-left item-icon-right">
+        <i class="icon fa fa-map"></i>
+        Floor (LG - L5)
+        <i class="icon ion-ios-arrow-right"></i>
+      </a>
+    </div>
+      <!--<ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="category in categories" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+        <img ng-src="{{chat.face}}">
+        <h2>{{chat.name}}</h2>
+        <p>{{chat.lastText}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>
+        {{category}}
+      </ion-item>-->
+  </ion-content>
+</ion-view>

@@ -1,0 +1,11 @@
+<ion-view view-title="Restaurants and Bars">
+  <ion-content class="padding">
+    <ion-list>
+      <ion-item class="item-thumbnail-left item-icon-right item-text-wrap" ng-repeat="cat in category" type="item-text-wrap" href="#/tab/categories/detail/{{cat.id}}">
+        <img ng-src="{{cat.img}}">
+        <h2>{{cat.name}}</h2>
+        <p>{{cat.desc}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

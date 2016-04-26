@@ -1,0 +1,49 @@
+<ion-modal-view id="model_more">
+  <ion-header-bar class="bar bar-header bar-dark">
+    <h1 class="title"></h1>
+    <div class="button button-clear ion-close" ng-click="modal.hide()">
+    </div>
+  </ion-header-bar>
+  <ion-content class="padding">
+    <ul class="list">
+        <li class="item" align="center">
+          <h2>Title 1</h2>
+        </li>
+        <li class="item" align="center">
+          <h2>Title 2</h2>
+        </li>
+        <li class="item" align="center">
+          <h2>Title 3</h2>
+        </li>
+    </ul>
+  </ion-content>
+</ion-modal-view>
+<style type="text/css">
+  #model_more .padding, #model_more .item{
+    background-color: #444 !important;
+  }
+  #model_more .list .item{
+    color: #fff;
+    border: 0px !important;
+  }
+  #model_more .bar-header {
+    border: 0px !important;
+    border-bottom-color: transparent !important;
+    background-image: none !important;
+    border-bottom: none !important;
+  }
+  #model_more .ion-close {
+    font-size: 22px;
+    margin-right: 10px;
+  }
+  #model_more .item h2{
+    color: white;
+  }
+  .modal{
+    top: 0 ;
+    bottom: 0 ; 
+    left: 0 ;
+    right: 0 ;
+    width: 100% ;
+  }
+</style>
